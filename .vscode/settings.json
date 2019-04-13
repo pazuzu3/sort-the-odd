@@ -1,0 +1,8 @@
+{
+    "files.exclude": {
+        ".git": true,
+        ".gitignore": true,
+        ".stack-work": true,
+        "sort-the-odd.cabal": true
+    }
+}

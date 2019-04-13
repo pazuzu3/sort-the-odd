@@ -1,0 +1,49 @@
+name:                sort-the-odd
+version:             0.1.0.0
+github:              "pazuzu3/sort-the-odd"
+license:             BSD3
+author:              "Andrew Ignatov"
+maintainer:          "pazuzu3@yandex.ru"
+copyright:           "2019 Andrew Ignatov"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/pazuzu3/sort-the-odd#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+
+executables:
+  sort-the-odd-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - sort-the-odd
+
+tests:
+  sort-the-odd-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - sort-the-odd
+    - hspec
