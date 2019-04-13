@@ -1,1 +1,1 @@
-# sort-the-odd
+https://www.codewars.com/kata/sort-the-odd/train/haskell
