@@ -4,5 +4,6 @@
         ".gitignore": true,
         ".stack-work": true,
         "sort-the-odd.cabal": true
-    }
+    },
+    "editor.tabSize": 2
 }

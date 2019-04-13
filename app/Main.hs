@@ -3,4 +3,4 @@ module Main where
 import SortArray
 
 main :: IO ()
-main = putStrLn "Hello world!!"
+main = print $ sortArray [5, 3, 2, 8, 1, 4]
